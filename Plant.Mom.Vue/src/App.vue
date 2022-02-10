@@ -22,4 +22,8 @@ export default Vue.extend({
   font-weight: 700 !important;
   letter-spacing: -1px;
 }
+
+* {
+  border-radius: 2px !important;
+}
 </style>
