@@ -26,11 +26,11 @@ public class MomController : Controller
         else
             result = new(_context.Moms
                 .Include(x => x.HumidityConfigurations)
-                .ThenInclude(x => x.HumidityDaySchedules)
+                .ThenInclude(x => x.HumidityDaySchedule)
                 .Include(x => x.HumidityConfigurations)
                 .ThenInclude(x => x.HumidityTimeSchedules)
                 .Include(x => x.LightingConfigurations)
-                .ThenInclude(x => x.LightingDaySchedules)
+                .ThenInclude(x => x.LightingDaySchedule)
                 .Include(x => x.LightingConfigurations)
                 .ThenInclude(x => x.LightingTimeSchedules)
                 .FirstOrDefault(x => x.Id == id));

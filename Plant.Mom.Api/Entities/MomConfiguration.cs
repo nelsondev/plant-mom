@@ -12,6 +12,8 @@ public class MomConfiguration
 
     public int Id { get; set; }
     public string? Name { get; set; }
+    public bool Enabled { get; set; }
+    public double Temperature { get; set; }
 
     public IList<HumidityConfiguration> HumidityConfigurations { get; set; }
     public IList<LightingConfiguration> LightingConfigurations { get; set; }
@@ -21,5 +23,7 @@ public class MomConfiguration
         && LightingConfigurations != null
         && !HumidityConfigurations.Any()
         && !LightingConfigurations.Any()
+        && HumidityConfigurations.Count(x => x.Enabled) == 1
+        && LightingConfigurations.Count(x => x.Enabled) == 1
         && !string.IsNullOrEmpty(Name);
 }

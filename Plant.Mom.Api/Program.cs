@@ -12,11 +12,12 @@ public class Program
         builder.Services.AddDbContext<PlantContext>();
         builder.Services.AddMvc().AddNewtonsoftJson(x =>
             x.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
+        builder.Services.AddHostedService<Raspberry>();
 
         // Configure application
         var app = builder.Build();
         app.UseHttpsRedirection();
-        app.UseAuthorization();
+        app.UseStaticFiles();
         app.MapControllers();
         app.Run();
     }

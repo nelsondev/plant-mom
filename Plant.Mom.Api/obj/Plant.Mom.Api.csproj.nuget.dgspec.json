@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\GitHub\\Plant.Mom.Api\\Plant.Mom.Api\\Plant.Mom.Api.csproj": {}
+    "C:\\Users\\nelso\\Documents\\GitHub\\plant-mom\\Plant.Mom.Api\\Plant.Mom.Api.csproj": {}
   },
   "projects": {
-    "D:\\GitHub\\Plant.Mom.Api\\Plant.Mom.Api\\Plant.Mom.Api.csproj": {
+    "C:\\Users\\nelso\\Documents\\GitHub\\plant-mom\\Plant.Mom.Api\\Plant.Mom.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\GitHub\\Plant.Mom.Api\\Plant.Mom.Api\\Plant.Mom.Api.csproj",
+        "projectUniqueName": "C:\\Users\\nelso\\Documents\\GitHub\\plant-mom\\Plant.Mom.Api\\Plant.Mom.Api.csproj",
         "projectName": "Plant.Mom.Api",
-        "projectPath": "D:\\GitHub\\Plant.Mom.Api\\Plant.Mom.Api\\Plant.Mom.Api.csproj",
+        "projectPath": "C:\\Users\\nelso\\Documents\\GitHub\\plant-mom\\Plant.Mom.Api\\Plant.Mom.Api.csproj",
         "packagesPath": "C:\\Users\\nelso\\.nuget\\packages\\",
-        "outputPath": "D:\\GitHub\\Plant.Mom.Api\\Plant.Mom.Api\\obj\\",
+        "outputPath": "C:\\Users\\nelso\\Documents\\GitHub\\plant-mom\\Plant.Mom.Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nelso\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Iot.Device.Bindings": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
             "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
               "target": "Package",
               "version": "[6.0.2, )"
@@ -71,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }
